@@ -14,7 +14,7 @@ services:
       - .env
 
   mysql:
-    image: mysql:latestdocker
+    image: mysql:latest
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
       timeout: 20s
